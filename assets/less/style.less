@@ -1,0 +1,280 @@
+@import "base.less"; // Import the base css
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400|Roboto+Slab:700,400,300|Oxygen:700,400,300);
+
+// * { background: rgba(0,0,0,0.1);}
+
+body { background: #f7f4f3; padding-bottom: 40px;}
+div { box-sizing: border-box; }
+.hide { display: none; }
+.show { display: block; }
+
+header {
+   background: #fff;
+   height: 70px;
+   box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+
+   img, h1, nav { float: left; }
+
+   img {
+      margin-right: 2%;
+      width: 80px;
+   }
+
+   h1 {
+      margin-top: 20px;
+      margin-left: 10px;
+      color: #3a2f29;
+      text-transform: uppercase;
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, arial, sans-serif;
+   }
+
+   nav {
+      ul {
+      margin: 0;
+      float: right;
+
+      a {
+         color: #58473e;
+         display: block;
+         text-decoration: none;
+         padding: 26px 20px 25px;
+         float: left;
+         &.active {
+            color: #120f0d;
+            border-bottom: 2px solid #b7a499;            
+            background: #f6f4f3;
+         }
+         &:hover {
+            color: #120f0d;
+            border-bottom: 2px solid #b7a499;
+         }
+      }
+
+      li {
+         text-transform: uppercase;
+         font-family: "Montserrat", "Helvetica Neue", Helvetica, arial, sans-serif;
+      }
+   }
+
+   .loginBox { margin: 12px; }
+
+   fieldset {
+      float: right;
+      font-size: 16px;
+
+         select,
+         input[type=text],
+         input[type=password],
+         input[type=email],
+         input[type=search],
+         input[type=tel] {
+            width: 100px;
+         }
+      }
+   }
+}
+
+#hero {
+   border-bottom: 1px solid #ccc0b8;
+   padding-bottom: 80px;
+
+   h2 {
+      font-family: "Oxygen", "Helvetica Neue", helvetica, sans-serif;
+      font-size: 40px;
+      text-align: center;
+      margin-top: 60px;
+      font-weight: 300;
+      color: #57493f;
+      text-shadow: 0px -2px 1px white;
+   }
+
+   p {
+         font-family: "Roboto Slab", Georgia, serif;
+      width: 80%;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 30px;
+      margin: 0px auto;
+      text-align: center;
+   }
+}
+
+#account {
+   display: block;
+   padding: 10px;
+
+   .col {
+      margin: 0px auto;
+      float: none;
+   }
+
+   .welcome {
+      text-shadow: 0px 2px 0px white;
+      
+      h2 {
+         font-family: "Oxygen", "Helvetica Neue", helvetica, sans-serif;
+         font-weight: 700;
+         font-size: 24px;
+         color: #57493f;
+      }
+      p {
+         font-family: "Roboto Slab", Georgia, serif;
+         font-size: 15px;
+         line-height: 20px;
+         color: #393029;
+      }
+   }
+
+   .queue {
+      margin: 40px 0;
+
+      .cardTop, .cardBottom {
+         margin: 0;
+         display: block;
+         padding: 15px;
+         font-family: "Roboto Slab", Georgia, serif;
+
+         h3 {
+            margin: 0;
+            line-height: 20px;
+            font-size: 22px;
+            display: inline-block;
+            float: left;
+            font-weight: 700;
+            color: #302822;
+         }
+
+         .fromLocation {
+            float: right;
+            span {
+               text-transform: uppercase; 
+               font-family: "Oxygen", "Helvetica Neue", helvetica, sans-serif;
+               font-weight: 700;
+               font-size: 12px;
+               color: #887262;
+            }
+         }
+
+         .statusBar {
+            .DeliveryStatus {
+               background: #92ac4d;
+               display: block;
+               display: inline-block;
+               padding: 4px;
+               margin: 0 3px;
+               .border-radius(3px);
+            }
+            .DeliveryLocation {
+               background: #fcf5db;
+               display: block;
+               display: inline-block;
+               padding: 4px;
+               margin: 0 3px;
+               .border-radius(3px);
+            }
+         }
+
+.transit {
+.DeliveryStatus {
+background: #ed7856;
+}
+}
+}
+.cardTop {
+.border-radiuses(8px, 0, 0, 8px);
+.box-shadow(0px -1px 0px #d3c9c2);
+border-top: 1px solid #efece9;
+border-left: 1px solid #efece9;
+border-right: 1px solid #efece9;
+background: rgba(255,255,255,0.8);
+height: 50px;
+
+}
+
+.cardBottom {
+.border-radiuses(0, 8px, 8px, 0);
+.box-shadow(0px 1px 0px white);
+border-bottom: 1px solid #efece9;
+border-left: 1px solid #efece9;
+border-right: 1px solid #efece9;
+margin-bottom: 20px;
+background: #f5df8d;
+}
+
+
+a 
+{
+color: #756154;
+text-shadow: 0px -1px 0px white;
+text-decoration: none;
+float: right;
+font-family: "Oxygen", "Helvetica Neue", helvetica, sans-serif;
+font-size: 13px;
+&:hover {
+color: #302822;
+
+}
+}
+h2 {
+color: #57493f;
+text-shadow: 0px -2px 1px white;
+font-family: "Montserrat", "Helvetica Neue", Helvetica, arial, sans-serif;
+text-transform: uppercase;
+}
+
+img {
+width: 761px;
+border-left: 1px solid #efece9;
+border-right: 1px solid #efece9;
+margin: 0;
+margin-bottom: -5px;
+}
+}
+}
+
+   #keyAddress {
+      margin-top: 30px;
+      h2 {
+         color: #57493f;
+         text-shadow: 0px -2px 1px white;
+         font-family: "Montserrat", "Helvetica Neue", Helvetica, arial, sans-serif;
+         text-transform: uppercase;
+      }
+      h4 {
+         margin: 0;
+         font-size: 18px;
+         margin-bottom: 10px;
+         font-family: "Roboto Slab", Georgia, serif;
+         float: left;
+         display: inline-block;
+      }
+      span  {
+         font-size: 11px;
+         margin-top: 6px;
+         display: block;
+         color: #57493f;
+         float: right;
+
+         a {
+            color: #a89487;
+            text-decoration: none;
+         }
+      }
+      .four {
+         background: white;
+         padding: 10px;
+         .border-radius(8px);
+         .box-shadow(0px 1px 3px rgba(0,0,0,0.1));
+      }
+   } 
+
+   .lp {
+      margin-top: 40px;
+         h1 {
+      margin-top: 20px;
+      margin-left: 10px;
+      color: #3a2f29;
+      text-transform: uppercase;
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, arial, sans-serif;
+   }
+   }

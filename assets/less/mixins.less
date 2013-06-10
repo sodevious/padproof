@@ -1,0 +1,63 @@
+// ==========================================================================
+
+//  Base Mixins - built with LESS - http://lesscss.org/
+//  Theme URI: http://git.io/base
+//  Author: Matthew Hartman - http://www.matthewhartman.com.au/
+//  Version: 0.2 - Last Updated: 28th May, 2013
+
+// ==========================================================================
+
+// Font Sizes (REMs with PX fallback for older browsers)
+.font-size (@sizeValue) {
+  @remValue: @sizeValue / 16;
+  @pxValue: (@sizeValue);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}
+
+// Line Height Sizes (REMs with PX fallback for older browsers)
+.line-height (@sizeValue) {
+  @remValue: @sizeValue / 16;
+  @pxValue: (@sizeValue);
+  line-height: ~"@{pxValue}px"; 
+  line-height: ~"@{remValue}rem";
+}
+
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
+
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+
+.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+	-webkit-border-top-right-radius:    @topright;
+	-webkit-border-bottom-right-radius: @bottomright;
+	-webkit-border-bottom-left-radius:  @bottomleft;
+	-webkit-border-top-left-radius:     @topleft;
+
+	-moz-border-radius-topright:        @topright;
+	-moz-border-radius-bottomright:     @bottomright;
+	-moz-border-radius-bottomleft:      @bottomleft;
+	-moz-border-radius-topleft:         @topleft;
+
+	border-top-right-radius:            @topright;
+	border-bottom-right-radius:         @bottomright;
+	border-bottom-left-radius:          @bottomleft;
+	border-top-left-radius:             @topleft;
+
+	-moz-background-clip:    padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip:         padding-box; 
+}
