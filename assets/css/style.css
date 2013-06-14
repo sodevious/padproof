@@ -692,6 +692,7 @@ body {
   font-size: 16px;
   padding-bottom: 30px;
   background: #fefefe;
+  background-image: url("http://subtlepatterns.com/patterns/blizzard.png");
   font-family: "museo-sans", "Helvetica Neue", helvetica, sans-serif;
 }
 header {
@@ -711,6 +712,7 @@ header h1 {
   background-position: center center;
   background-size: cover;
   padding: 80px 0  40px;
+  border-top: 1px black solid;
   -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7) inset;
   -moz-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7) inset;
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7) inset;
@@ -721,7 +723,7 @@ header h1 {
 .fullimg .five h2 {
   font-weight: 700;
   color: white;
-  margin-top: 35px;
+  margin-top: 10px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 .fullimg .five h4 {
@@ -730,4 +732,10 @@ header h1 {
   line-height: 28px;
   font-size: 18px;
   margin-top: 30px;
+}
+.fullimg .five h4 span {
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: 500;
+  color: #ffffff;
 }
