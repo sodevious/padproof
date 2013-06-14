@@ -9,11 +9,9 @@
 @museosans:  "museo-sans", "Helvetica Neue", helvetica, sans-serif;
 
 div { box-sizing: border-box; }
+img { width: 100%; }
 .hide { display: none; }
 .show { display: block; }
-img {
-   width: 100%;
-}
 
 
 // Start Styles
@@ -21,10 +19,8 @@ img {
 body {
    font-size: 16px;
    padding-bottom: 30px;
-   // /.gradient(@blue, darken(@darkBlue, 6%));
-   //background: lighten(@lightBlue, 1%);
    background: #fefefe;
-   background-image: url("http://subtlepatterns.com/patterns/blizzard.png");
+   background-image: url("../../assets/img/bg/3.png");
    font-family: @museosans;
 }
 
@@ -36,8 +32,19 @@ header {
 
    h1 {
       font-family: @museo;
+      color: #3c5664;
+      text-shadow: 0px -1px 0px rgba(255,255,255,1), 0px 1px 4px rgba(0,0,0,0.3);
       font-weight: bold;
       margin: 40px 0 20px;
+   }
+}
+
+.signup {
+   h4 {
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #3c5664;
+      font-weight: 700;
    }
 }
 
