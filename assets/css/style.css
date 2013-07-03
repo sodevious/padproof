@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 /* ==========================================================================
 
   Base Stylesheet - http://git.io/base
@@ -128,14 +129,15 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 /* Links */
 a {
-  color: #f30;
-  text-decoration: underline;
+  color: #2d5985;
+  text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:active {
   color: #333;
@@ -187,7 +189,7 @@ p {
   word-wrap: break-word;
   -ms-word-wrap: break-word;
   *white-space: normal;
-  margin: 0 0 22px 0;
+  margin: 0 0 15px 0;
 }
 small {
   font-size: 12px;
@@ -691,59 +693,152 @@ img {
 body {
   font-size: 16px;
   padding-bottom: 30px;
-  background: #fefefe;
-  background-image: url("../../assets/img/bg/3.png");
+  background: #f6fbfa;
   font-family: "museo-sans", "Helvetica Neue", helvetica, sans-serif;
 }
 header {
   text-align: center;
+  box-shadow: 0px 5px 0px 0px rgba(255, 255, 255, 0.4) inset;
   margin-bottom: 60px;
   display: block;
   zoom: 1;
 }
 header h1 {
-  font-family: "museo", "Helvetica Neue", helvetica, sans-serif;
+  font-family: "Montserrat", "museo-sans", "Helvetica Neue", helvetica, sans-serif;
   color: #3c5664;
-  text-shadow: 0px -1px 0px #ffffff, 0px 1px 4px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
   font-weight: bold;
-  margin: 40px 0 20px;
+  font-size: 60px;
+  margin: 0 0 40px;
+  letter-spacing: -2px;
 }
-.signup h4 {
-  text-transform: uppercase;
-  font-size: 18px;
-  color: #3c5664;
-  font-weight: 700;
+header h3 {
+  color: white;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 70px;
 }
 .fullimg {
   background-image: url("../../assets/img/ocean.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 80px 0  40px;
-  border-top: 1px black solid;
-  -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7) inset;
-  -moz-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7) inset;
-  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.7) inset;
+  padding: 70px 0  40px;
 }
-.fullimg .five {
-  padding: 20px;
-}
-.fullimg .five h2 {
+.fullimg .six h2 {
   font-weight: 700;
+  font-family: "Montserrat", "museo-sans", "Helvetica Neue", helvetica, sans-serif;
+  font-size: 26px;
+  padding-right: 100px;
+  text-align: left;
+  line-height: 30px;
+  letter-spacing: -1px;
   color: white;
-  margin-top: 10px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
-.fullimg .five h4 {
   color: rgba(255, 255, 255, 0.8);
-  text-shadow: 0px -1px 0px #000000;
+}
+.fullimg .six h4 {
+  color: #ffffff;
   line-height: 28px;
-  font-size: 18px;
+  font-size: 21px;
+  text-align: left;
   margin-top: 30px;
 }
-.fullimg .five h4 span {
-  margin-top: 10px;
+.fullimg .six h4 span {
+  margin-top: 20px;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-shadow: 0px -1px 1px rgba(255, 255, 255, 0.3);
   color: #ffffff;
+  color: #3c5664;
+}
+.features {
+  margin-bottom: 100px;
+}
+.features * {
+  background: rgba(0, 0, 0, 0.3);
+}
+.marketing {
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 80px;
+  padding-bottom: 40px;
+}
+.signup h4 {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #3c5664;
+  font-weight: 700;
+  font-family: "museo", "Helvetica Neue", helvetica, sans-serif;
+  line-height: 18px;
+  text-shadow: 0px -1px 0px #ffffff;
+}
+.signup h5 {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  color: #22323a;
+  margin-bottom: 20px;
+}
+.signup .seven p {
+  margin-bottom: 30px;
+  width: 90%;
+}
+.signup .five a {
+  font-style: italic;
+}
+.signup .five p {
+  font-size: 14px;
+}
+.signup .five input {
+  box-sizing: border-box;
+  width: 100%;
+  border-top: 0px;
+  box-shadow: none;
+}
+.signup .five input.signFirst {
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-top: 1px;
+  width: 50%;
+  float: left;
+}
+.signup .five input.signLast {
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-left: 0px;
+  border-top: 1px;
+  width: 50%;
+  float: right;
+}
+.signup .five button {
+  width: 100%;
+  margin: 10px 0;
 }
