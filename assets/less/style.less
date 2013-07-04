@@ -7,6 +7,9 @@
 @darkBlue: #1A3148;
 @blue: #024A65;
 
+@twitter: #00acee;
+@facebook: #3b5998;
+
 @primary-color: #3c5664;
 @secondary-color: #ADDED0;
 @slate: #4E4E4E;
@@ -21,9 +24,7 @@ img { width: 100%; }
 .hide { display: none; }
 .show { display: block; }
 
-
 // Start Styles
-
 body {
 	font-size: 16px;
 	padding-bottom: 30px;
@@ -49,69 +50,74 @@ header {
 	}
 
 	h3 {
-		//color: darken(@slate, 10%);
-				color:  white;
-				text-shadow: 0px -1px 1px rgba(0,0,0,0.2);
-				font-size: 28px;
-					border-bottom: 1px solid rgba(255,255,255,0.3);
-					padding-bottom: 70px;
-
-
+		color:  white;
+		text-shadow: 0px -1px 1px rgba(0,0,0,0.2);
+		font-size: 28px;
+		border-bottom: 1px solid rgba(255,255,255,0.3);
+		padding-bottom: 70px;
 	}
 }
 
 .fullimg {
-background-image: url("../../assets/img/ocean.jpg");
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-padding: 70px 0  40px;
-// border-top: 1px black solid;
-// border-bottom: 1px black solid;
+	background-image: url("../../assets/img/ocean.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding: 70px 0  40px;
 
-.six {
-// padding: 20px;
-h2 {
-font-weight: 700;
-font-family: @montserrat;
-font-size: 26px;
-padding-right: 100px;
-text-align: left;
-line-height: 30px;
+	.six {
+		h2 {
+			font-weight: 700;
+			font-family: @montserrat;
+			font-size: 26px;
+			padding-right: 100px;
+			text-align: left;
+			line-height: 30px;
+			letter-spacing: -1px;
+			color: white;
+			color: rgba(255,255,255,0.8);
+		}
 
-letter-spacing: -1px;
-color: white;
-color: rgba(255,255,255,0.8);
-}
-h4 {
-color: rgba(255,255,255,1);
-// text-shadow: 0px -1px 0px black;
-line-height: 28px;
-font-size: 21px;
-text-align: left;
+		h4 {
+			color: rgba(255,255,255,1);
+			line-height: 24px;
+			font-size: 20px;
+			text-align: left;
+			margin-top: 30px;
 
-margin-top: 30px;
+			span {
+				margin-top: 20px;
+				display: inline-block;
+				font-weight: 700;
+				font-size: 1.1em;
+				//text-shadow: 0px -1px 1px rgba(255,255,255,0.3);
+				//color: rgba(255, 255, 255, 1);
+				color: darken(@primary-color, 6%);
+								color: lighten(@secondary-color, 10%);
 
-span {
-margin-top: 20px;
-display: inline-block;
-font-weight: 700;
-font-size: 1.1em;
-text-shadow: 0px -1px 1px rgba(255,255,255,0.3);
-color: rgba(255, 255, 255, 1);
-color: @primary-color;
-}
-}
-}
+			}
+		}
+	}
 }
 
 .features {
-	* { background: rgba(0,0,0,0.3); }
+//	* { background: rgba(0,0,0,0.3); }
 	margin-bottom: 100px;
+
+	h4 {
+		text-transform: uppercase;
+		font-size: 16px;
+		text-align: center;
+		border-bottom: 1px solid @secondary-color;
+		margin-bottom: 12px;
+		padding-bottom: 12px;
+		color: @primary-color;
+		font-family: @montserrat;
+		word-spacing: 3px;
+	}
 }
 
 .marketing {
-	//padding-top: 80px;
 	width: 80%;
 	margin:  0px auto;
 	margin-top: 80px;
@@ -119,65 +125,95 @@ color: @primary-color;
 }
 
 .signup {
-h4 {
-text-transform: uppercase;
-font-size: 22px;
-color: #3c5664;
-font-weight: 700;
-font-family: @museo;
-line-height: 18px;
-text-shadow: 0px -1px 0px white;
-}
-h5 {
-font-size: 17px;
-font-weight: 700;
-text-align: center;
-color: #22323a;
-margin-bottom: 20px;
+	h4 {
+		text-transform: uppercase;
+		font-size: 22px;
+		color: #3c5664;
+		font-weight: 700;
+		font-family: @museo;
+		line-height: 18px;
+		text-shadow: 0px -1px 0px white;
+	}
+	h5 {
+		font-size: 17px;
+		font-weight: 700;
+		text-align: center;
+		color: #22323a;
+		margin-bottom: 20px;
+	}
 
-}
-.seven p {
-margin-bottom: 30px;
-width: 90%;
-}
-
-.five {
-a {
-font-style: italic;
-}
-
-p {
-font-size: 14px;
-}
-input {
-box-sizing: border-box;
-width: 100%;
-//border-bottom: 0px;
-border-top: 0px;
-box-shadow: none;
-}
-input.signFirst {
-.border-radiuses(0px, 0, 0, 8px);
-border-top: 1px;
-width: 50%;
-float: left;
-
-}
-input.signLast {
-.border-radiuses(8px, 0, 0, 0);
-border-left: 0px;
-border-top: 1px;
-width: 50%;
-float: right;
-
-}
+.pure-form input {
+			background: pink;
+			width: 21%;
+		}
 
 
-button {
-width: 100%;
-margin: 10px 0;
+	.six p {
+		margin-bottom: 30px;
+		width: 90%;
+	}
+	.six {
+		a { font-style: italic; }
+		p { font-size: 14px; }
+
+		input {
+			box-sizing: border-box;
+			width: 100%;
+			border-top: 0px;
+			box-shadow: none;
+		}
+		input.signFirst {
+			.border-radiuses(0px, 0, 0, 8px);
+			border-top: 1px;
+			width: 50%;
+			float: left;
+		}
+		input.signLast {
+			.border-radiuses(8px, 0, 0, 0);
+			border-left: 0px;
+			border-top: 1px;
+			width: 50%;
+			float: right;
+		}
+		button {
+			width: 100%;
+			margin: 10px 0;
+		}
+	}
 }
-}
+
+.comingsoon {
+	margin-top: 100px;
+	margin-bottom: 10px;
+	
+	.facebook-link {
+		.social-links;
+		background-color: @facebook;
+		box-shadow: 0px 3px 0px darken(@facebook, 8%);
+	}
+	.twitter-link {
+		.social-links;
+		box-shadow: 0px 3px 0px darken(@twitter, 8%);
+		background-color: @twitter;
+	}
 }
 
 
+// Layout Mixins 
+
+.social-links { 
+	width: 100%;
+	padding: 10px;
+	font-size: 12px;
+	display: block;
+	color: white;
+	text-align: center;
+	font-family: @montserrat;
+	text-transform: uppercase;
+	.box-sizing(border-box);
+	.border-radius(4px);
+	&:hover {
+		text-decoration: none;
+		.opacity (0.9);
+	}
+}

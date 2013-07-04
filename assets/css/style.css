@@ -739,8 +739,8 @@ header h3 {
 }
 .fullimg .six h4 {
   color: #ffffff;
-  line-height: 28px;
-  font-size: 21px;
+  line-height: 24px;
+  font-size: 20px;
   text-align: left;
   margin-top: 30px;
 }
@@ -749,15 +749,22 @@ header h3 {
   display: inline-block;
   font-weight: 700;
   font-size: 1.1em;
-  text-shadow: 0px -1px 1px rgba(255, 255, 255, 0.3);
-  color: #ffffff;
-  color: #3c5664;
+  color: #314651;
+  color: #d1ede5;
 }
 .features {
   margin-bottom: 100px;
 }
-.features * {
-  background: rgba(0, 0, 0, 0.3);
+.features h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid #added0;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  color: #3c5664;
+  font-family: "Montserrat", "museo-sans", "Helvetica Neue", helvetica, sans-serif;
+  word-spacing: 3px;
 }
 .marketing {
   width: 80%;
@@ -781,23 +788,27 @@ header h3 {
   color: #22323a;
   margin-bottom: 20px;
 }
-.signup .seven p {
+.signup .pure-form input {
+  background: pink;
+  width: 21%;
+}
+.signup .six p {
   margin-bottom: 30px;
   width: 90%;
 }
-.signup .five a {
+.signup .six a {
   font-style: italic;
 }
-.signup .five p {
+.signup .six p {
   font-size: 14px;
 }
-.signup .five input {
+.signup .six input {
   box-sizing: border-box;
   width: 100%;
   border-top: 0px;
   box-shadow: none;
 }
-.signup .five input.signFirst {
+.signup .six input.signFirst {
   -webkit-border-top-right-radius: 0px;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -817,7 +828,7 @@ header h3 {
   width: 50%;
   float: left;
 }
-.signup .five input.signLast {
+.signup .six input.signLast {
   -webkit-border-top-right-radius: 8px;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -838,7 +849,102 @@ header h3 {
   width: 50%;
   float: right;
 }
-.signup .five button {
+.signup .six button {
   width: 100%;
   margin: 10px 0;
+}
+.comingsoon {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.comingsoon .facebook-link {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", "museo-sans", "Helvetica Neue", helvetica, sans-serif;
+  text-transform: uppercase;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #3b5998;
+  box-shadow: 0px 3px 0px #30487b;
+}
+.comingsoon .facebook-link:hover {
+  text-decoration: none;
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  -webkit-opacity: 0.9;
+  opacity: 0.9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+  filter: alpha(opacity=90);
+}
+.comingsoon .twitter-link {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", "museo-sans", "Helvetica Neue", helvetica, sans-serif;
+  text-transform: uppercase;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  box-shadow: 0px 3px 0px #008fc5;
+  background-color: #00acee;
+}
+.comingsoon .twitter-link:hover {
+  text-decoration: none;
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  -webkit-opacity: 0.9;
+  opacity: 0.9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+  filter: alpha(opacity=90);
+}
+.social-links {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", "museo-sans", "Helvetica Neue", helvetica, sans-serif;
+  text-transform: uppercase;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.social-links:hover {
+  text-decoration: none;
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  -webkit-opacity: 0.9;
+  opacity: 0.9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+  filter: alpha(opacity=90);
 }
