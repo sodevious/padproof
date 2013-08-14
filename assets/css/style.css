@@ -694,7 +694,7 @@ body {
   font-size: 16px;
   padding-bottom: 30px;
   background: #f6fbfa;
-  font-family: "museo-sans", "Helvetica Neue", helvetica, sans-serif;
+  font-family: "museo-sans", "Museo Sans", "Helvetica Neue", helvetica, sans-serif;
 }
 header {
   text-align: center;
@@ -748,12 +748,12 @@ header h3 {
   margin-top: 20px;
   display: inline-block;
   font-weight: 700;
-  font-size: 1.1em;
+  font-size: 0.95em;
   color: #314651;
   color: #d1ede5;
 }
 .features {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .features h4 {
   text-transform: uppercase;
@@ -766,6 +766,11 @@ header h3 {
   font-family: "Montserrat", "museo-sans", "Helvetica Neue", helvetica, sans-serif;
   word-spacing: 3px;
 }
+.features p {
+  padding: 5px 10px;
+  line-height: 1.4em;
+  color: #4e4e4e;
+}
 .marketing {
   width: 80%;
   margin: 0px auto;
@@ -773,12 +778,10 @@ header h3 {
   padding-bottom: 40px;
 }
 .signup h4 {
-  text-transform: uppercase;
-  font-size: 22px;
+  font-size: 19px;
   color: #3c5664;
-  font-weight: 700;
-  font-family: "museo", "Helvetica Neue", helvetica, sans-serif;
-  line-height: 18px;
+  font-family: "Montserrat", "museo-sans", "Helvetica Neue", helvetica, sans-serif;
+  margin-bottom: 30px;
   text-shadow: 0px -1px 0px #ffffff;
 }
 .signup h5 {
@@ -788,70 +791,91 @@ header h3 {
   color: #22323a;
   margin-bottom: 20px;
 }
-.signup .pure-form input {
-  background: pink;
-  width: 21%;
-}
-.signup .six p {
-  margin-bottom: 30px;
-  width: 90%;
-}
 .signup .six a {
   font-style: italic;
 }
 .signup .six p {
   font-size: 14px;
+  margin-bottom: 30px;
+  width: 90%;
 }
 .signup .six input {
   box-sizing: border-box;
   width: 100%;
+  border-bottom: 1px solid #ddd;
   border-top: 0px;
   box-shadow: none;
 }
-.signup .six input.signFirst {
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 8px;
-  -moz-border-radius-topright: 0px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 8px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 8px;
+.signup .six input:last-child {
+  border-top: 1px solid #ddd;
+}
+.signup .six button {
+  width: 100%;
+  margin: 10px 0;
+}
+.signup .six input.shame {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border-top: 1px;
-  width: 50%;
-  float: left;
 }
-.signup .six input.signLast {
-  -webkit-border-top-right-radius: 8px;
+.signup .six input.shameful {
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 4;
+  -webkit-border-bottom-left-radius: 4;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 4;
+  -moz-border-radius-bottomleft: 4;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 4;
+  border-bottom-left-radius: 4;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.signup .six .half {
+  margin: 0;
+  width: 50%;
+}
+.signup .six .half:first-child input {
+  border-right: 0px;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 4;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 4;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 4;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.signup .six .half:last-child input {
+  -webkit-border-top-right-radius: 4;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
   -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topright: 8px;
+  -moz-border-radius-topright: 4;
   -moz-border-radius-bottomright: 0;
   -moz-border-radius-bottomleft: 0;
   -moz-border-radius-topleft: 0;
-  border-top-right-radius: 8px;
+  border-top-right-radius: 4;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border-left: 0px;
-  border-top: 1px;
-  width: 50%;
-  float: right;
-}
-.signup .six button {
-  width: 100%;
-  margin: 10px 0;
 }
 .comingsoon {
   margin-top: 100px;
