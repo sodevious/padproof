@@ -238,13 +238,13 @@ header {
 	ul {
 		float: right;
 		li {
-		list-style-type: none;
-		float: left;
-		margin-right: 1.5em;
-		font-size: 14px;
-		line-height: 2.8em;
+			list-style-type: none;
+			float: left;
+			margin-right: 1.5em;
+			font-size: 14px;
+			line-height: 2.8em;
+		}
 	}
-}
 }
 
 footer {
@@ -252,7 +252,6 @@ footer {
 	font-size: 13px;
 	color: @slate;
 }
-
 
 // Layout Stuff 
 .social-links { 
@@ -292,4 +291,18 @@ footer {
 	background: #FFF;
 	.border-radius(5px); 
 	.box-shadow(0px 0px 4px rgba(0,0,0,0.7));
+}
+
+@media only screen and (min-width: @tablet-breakpoint) and (max-width: @desktop-breakpoint) {
+	* { background: rgba(255,255,0,0.1); }
+
+	header {
+		h2 { font-size: 1.7em; }
+		h3 { font-size: 1.7em; padding-bottom: 30px; }
+	}
+	
+}
+
+@media only screen and (max-width: @mobile-breakpoint) {
+	* { background: rgba(0,255,0,0.1); }
 }
